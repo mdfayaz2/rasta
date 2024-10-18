@@ -1,0 +1,109 @@
+/* General footer styling */
+.footer {
+  background: linear-gradient(135deg, #6b00f5 0%, #9c4aff 50%, #ae00ff 100%);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.footer-section {
+  width: 30%; /* Each section will take up 30% of the container width */
+  margin-bottom: 10px;
+  text-align: center; /* Center-aligns the content in each section */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .footer-section {
+    width: 45%; /* Slightly wider sections on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically on mobile screens */
+    align-items: center;
+  }
+
+  .footer-section {
+    width: 80%; /* Take up more width on smaller screens */
+    margin-bottom: 30px;
+  }
+}
+
+/* Section heading */
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.footer-section h3 {
+  margin-bottom: 5px;
+  color: white;
+  text-align: left;
+  font-weight: bolder;
+}
+
+/* Paragraph styling */
+.footer-section p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the branch list */
+.branch-list {
+  list-style-type: disc; /* Dots before list items */
+  padding-left: 20px; /* Indent the list */
+  text-align: left; /* Align branch list to the left */
+  display: inline-block;
+}
+
+/* Ensure list items look nice and aligned */
+.branch-list li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Align logo properly */
+.footer-logo {
+  width: 160px; /* Adjust the size of the logo */
+  height: 80px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+/* Styling the contact icons */
+.footer-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle; /* Align icons with text */
+}
+
+/* Adjust logo and contact icon size for smaller screens */
+@media (max-width: 480px) {
+  .footer-logo {
+    width: 120px; /* Smaller logo on mobile */
+    height: 60px;
+  }
+
+  .footer-icon {
+    font-size: 1rem; /* Smaller icon size */
+  }
+
+  .footer-section {
+    width: 90%; /* Full width on small devices */
+  }
+
+  .footer-section h4 {
+    font-size: 1.3rem; /* Adjust heading font size for mobile */
+  }
+}

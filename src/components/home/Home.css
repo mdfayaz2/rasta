@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.landing-page {
+  text-align: center;
+  background: linear-gradient(135deg, #6b00f5 0%, #9c4aff 50%, #ae00ff 100%);
+  position: relative;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: linear-gradient(135deg, #6b00f5 0%, #9c4aff 50%, #ae00ff 100%);
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: -5px;
+}
+
+.business-rasta {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.business-rasta span {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.05s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Navbar animation */
+.business-rasta span:nth-child(1) { animation-delay: 0s; }
+.business-rasta span:nth-child(2) { animation-delay: 0.05s; }
+.business-rasta span:nth-child(3) { animation-delay: 0.1s; }
+/* Add additional child span selectors for animations */
+
+/* Navbar Menu */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Hover effect for navbar links */
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  width: 150px;
+  padding: 5px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+/* Animated icons in cards */
+.animated-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0); /* Reset icon transform */
+}
+
+.logo-card:hover .animated-icon {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Main content container */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 60px 50px;
+  width: 100%;
+}
+
+.logo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 4px 10px #445c84;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  width: 22%;
+  height: 180px;
+  cursor: pointer;
+}
+
+.logo-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px #445c84;
+}
+
+/* Card text */
+h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+}
+
+.logo-card:hover h3 {
+  color: #445c84;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .business-rasta {
+    font-size: 30px;
+  }
+
+  .logo-card {
+    width: 40%; /* Wider for tablets */
+    height: 160px;
+  }
+
+  .navbar ul li a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .logo-card {
+    width: 80%; /* Larger on mobile screens */
+    height: auto;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .navbar ul li a {
+    font-size: 1.2rem;
+  }
+
+  .business-rasta {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  .logo-card {
+    width: 90%;
+    height: auto;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+  }
+
+  .business-rasta {
+    font-size: 24px;
+  }
+}
