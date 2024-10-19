@@ -1,22 +1,18 @@
 {
   "files": {
-    "main.css": "/rasta/static/css/main.49c870e9.css",
-    "main.js": "/rasta/static/js/main.fd5edb34.js",
+    "main.css": "/rasta/static/css/main.eea00791.css",
+    "main.js": "/rasta/static/js/main.44bbb11c.js",
     "static/media/logo1.png": "/rasta/static/media/logo1.807e702d8f4ec6bb06b5.png",
-    "static/media/logo.png": "/rasta/static/media/logo.22b7cfeffca5475e375d.png",
-    "static/media/job.gif": "/rasta/static/media/job.a5b849f9490d8c36dac1.gif",
-    "static/media/website.gif": "/rasta/static/media/website.544f4774bec60859082f.gif",
-    "static/media/business.gif": "/rasta/static/media/business.accc41f23c34c55e9ca6.gif",
     "static/media/poppins-latin-400-normal.woff": "/rasta/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
     "static/media/poppins-latin-400-normal.woff2": "/rasta/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
     "static/media/poppins-latin-ext-400-normal.woff": "/rasta/static/media/poppins-latin-ext-400-normal.cf7e1ed83eb19f7b1ea6.woff",
     "static/media/poppins-latin-ext-400-normal.woff2": "/rasta/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
     "index.html": "/rasta/index.html",
-    "main.49c870e9.css.map": "/rasta/static/css/main.49c870e9.css.map",
-    "main.fd5edb34.js.map": "/rasta/static/js/main.fd5edb34.js.map"
+    "main.eea00791.css.map": "/rasta/static/css/main.eea00791.css.map",
+    "main.44bbb11c.js.map": "/rasta/static/js/main.44bbb11c.js.map"
   },
   "entrypoints": [
-    "static/css/main.49c870e9.css",
-    "static/js/main.fd5edb34.js"
+    "static/css/main.eea00791.css",
+    "static/js/main.44bbb11c.js"
   ]
 }
