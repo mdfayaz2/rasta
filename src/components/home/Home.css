@@ -12,15 +12,16 @@ body {
 .landing-page {
   text-align: center;
   background: linear-gradient(135deg, #6b00f5 0%, #9c4aff 50%, #ae00ff 100%);
+  clip-path: ellipse(100% 80% at 50% 0%);
   position: relative;
+  padding-bottom: 150px;
 }
 
-/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 20px 5%;
   background: linear-gradient(135deg, #6b00f5 0%, #9c4aff 50%, #ae00ff 100%);
   position: relative;
   width: 100%;
@@ -33,49 +34,48 @@ body {
 }
 
 .logo {
-  height: 100px;
+  height: 80px; /* Adjusted for smaller screens */
   width: auto;
   background-color: white;
   border-radius: 15px;
-  padding: -5px;
 }
 
 .business-rasta {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 35px;
+  font-size: 2rem; /* Responsive font size */
   font-weight: bold;
   color: white;
+  white-space: nowrap; /* Prevents line breaks */
+  transition: color 0.5s ease; /* Smooth transition for color change */
+  padding: 10px 0; /* Add padding to prevent overlap */
+  display: flex;
+  flex-wrap: wrap;
+  text-shadow: 2px 2px 3px white;
 }
 
 .business-rasta span {
-  opacity: 0;
   display: inline-block;
-  animation: fadeIn 0.05s forwards;
+  opacity: 0; /* Start as invisible */
+  transform: translateX(-20px); /* Start slightly to the left */
+  animation: slideIn 0.5s forwards; /* Initial animation for each letter */
+  animation-delay: calc(var(--i) * 0.1s);
 }
 
-@keyframes fadeIn {
+@keyframes slideIn {
   to {
-    opacity: 1;
+    opacity: 1; /* Fade in */
+    transform: translateX(0); /* Move to original position */
   }
 }
 
-/* Navbar animation */
-.business-rasta span:nth-child(1) { animation-delay: 0s; }
-.business-rasta span:nth-child(2) { animation-delay: 0.05s; }
-.business-rasta span:nth-child(3) { animation-delay: 0.1s; }
-/* Add additional child span selectors for animations */
-
-/* Navbar Menu */
 .navbar ul {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Ensure items wrap on small screens */
 }
 
 .navbar ul li {
-  margin: 0 15px;
+  margin: 0 55px;
 }
 
 .navbar ul li a {
@@ -86,7 +86,12 @@ body {
   align-items: center;
 }
 
-/* Hover effect for navbar links */
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
 .navbar ul li a:hover {
   background-color: white;
   color: black;
@@ -95,57 +100,17 @@ body {
   padding: 5px;
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-}
-
-/* Animated icons in cards */
-.animated-icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease-in-out;
-  transform: translateY(0); /* Reset icon transform */
-}
-
-.logo-card:hover .animated-icon {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Main content container */
 .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 60px 50px;
+  padding: 60px 5%; /* Responsive padding */
   width: 100%;
 }
 
-.logo-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  box-shadow: 0 4px 10px #445c84;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
-  width: 22%;
-  height: 180px;
-  cursor: pointer;
-}
 
-.logo-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 15px #445c84;
-}
-
-/* Card text */
 h3 {
   margin: 0;
   font-size: 1.1rem;
@@ -158,75 +123,34 @@ h3 {
   color: #445c84;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 15px 30px;
-  }
-
-  .business-rasta {
-    font-size: 30px;
-  }
-
-  .logo-card {
-    width: 40%; /* Wider for tablets */
-    height: 160px;
-  }
-
-  .navbar ul li a {
-    font-size: 1.3rem;
-  }
-}
-
+/* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 30px 0;
-  }
-
-  .logo-card {
-    width: 80%; /* Larger on mobile screens */
-    height: auto;
-  }
-
-  h3 {
-    font-size: 1rem;
-  }
-
-  .navbar ul li a {
-    font-size: 1.2rem;
+  .navbar {
+    flex-direction: column; /* Stack navbar items on smaller screens */
+    align-items: flex-start;
   }
 
   .business-rasta {
-    font-size: 28px;
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    padding: 20px 0; /* Add more padding to separate from navbar */
+  }
+
+  .logo-card {
+    width: calc(100% - 20px); /* Full width for mobile */
   }
 }
 
 @media (max-width: 480px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
+  .logo {
+    height: 60px; /* Even smaller logo for very small screens */
   }
 
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar ul li {
-    margin-bottom: 10px;
-  }
-
-  .logo-card {
-    width: 90%;
-    height: auto;
-  }
-
-  h3 {
-    font-size: 0.9rem;
+  .navbar ul li a {
+    font-size: 1.2rem; /* Smaller font size for mobile */
   }
 
   .business-rasta {
-    font-size: 24px;
+    font-size: 1.2rem; /* Even smaller font size */
+    padding: 15px 0; /* Adjust padding */
   }
 }
