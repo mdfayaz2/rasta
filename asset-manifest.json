@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rasta/static/css/main.ba86a5bb.css",
+    "main.css": "/rasta/static/css/main.b5b136bc.css",
     "main.js": "/rasta/static/js/main.38fa2fc9.js",
     "static/media/slide3.png": "/rasta/static/media/slide3.735e759762af73ea505b.png",
     "static/media/slide1.png": "/rasta/static/media/slide1.0c0a69d718deafe6e23c.png",
@@ -18,11 +18,11 @@
     "static/media/poppins-latin-ext-400-normal.woff": "/rasta/static/media/poppins-latin-ext-400-normal.cf7e1ed83eb19f7b1ea6.woff",
     "static/media/poppins-latin-ext-400-normal.woff2": "/rasta/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
     "index.html": "/rasta/index.html",
-    "main.ba86a5bb.css.map": "/rasta/static/css/main.ba86a5bb.css.map",
+    "main.b5b136bc.css.map": "/rasta/static/css/main.b5b136bc.css.map",
     "main.38fa2fc9.js.map": "/rasta/static/js/main.38fa2fc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba86a5bb.css",
+    "static/css/main.b5b136bc.css",
     "static/js/main.38fa2fc9.js"
   ]
 }
