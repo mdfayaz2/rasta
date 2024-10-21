@@ -1,57 +1,114 @@
-/* Modal Container */
-.modal-container {
+/* ContactUs.css */
+
+/* Modal Background */
+.custom-modal {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark translucent background */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  z-index: 1000; /* Make sure it's on top of everything */
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fff;
-  padding: 20px;
   border-radius: 8px;
+  padding: 2rem;
   width: 90%;
   max-width: 500px;
-  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   position: relative;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Close Button */
-.close-button {
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.company-logo {
+  width: 500px;
+  height: auto;
+}
+.location {
+  font-size: 700px;
+}
+/* Close button */
+.close-icon {
   position: absolute;
   top: 10px;
   right: 20px;
-  font-size: 24px;
+  font-size: 2rem;
+  font-weight: bold;
   cursor: pointer;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 /* Contact Info */
 .contact-info {
-  margin-top: 20px;
-  text-align: left;
+  display: grid;
+  gap: 1.2rem;
 }
 
-.contact-info p {
-  margin: 10px 0;
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
-/* Responsive Design */
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.contact-label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.mail p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .modal-content {
-    padding: 15px;
+    padding: 1.5rem;
+    width: 90%;
   }
 
-  .contact-info p {
-    font-size: 14px;
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-label {
+    font-size: 1rem;
+  }
+
+  .contact-icon {
+    font-size: 1.6rem;
+  }
+
+  .mail p {
+    font-size: 0.95rem;
   }
 }
+
+/* Fade in animation */
