@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'; // Importing modern icons
 import './ImageCarousel.css';
+import slide1 from '../../assests/slide1.png';
+import slide2 from '../../assests/slide2.png';
+import slide3 from '../../assests/slide3.png';
 
 const ImageCarousel = () => {
   const images = [
-    'https://via.placeholder.com/600x400/FF5733/FFFFFF?text=Slide+1',
-    'https://via.placeholder.com/600x400/33FF57/FFFFFF?text=Slide+2',
-    'https://via.placeholder.com/600x400/5733FF/FFFFFF?text=Slide+3',
+    slide1,
+    slide2,
+    slide3,
     'https://via.placeholder.com/600x400/FF33A1/FFFFFF?text=Slide+4'
   ];
 
@@ -26,7 +29,7 @@ const ImageCarousel = () => {
 
   // Autoplay effect
   useEffect(() => {
-    const autoPlay = setInterval(nextSlide, 2000); // Change slide every 3 seconds
+    const autoPlay = setInterval(nextSlide, 3000); // Change slide every 3 seconds
     return () => clearInterval(autoPlay); // Clear interval on component unmount
   }, [currentIndex]); // Restart interval on currentIndex change
 

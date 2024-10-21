@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer';
 import Cards from './components/cards/Cards';
 import Whatsapp from './components/whatsapp/Whatapp';
 import ImageCarousel from './components/imagecarousel/ImageCarousel';
+import FloatingForm from './components/form/FloatingForm';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Home  className="nav"/>
     <ImageCarousel/>
     <Cards/>
+    <FloatingForm/>
     <Whatsapp/>
     <Footer />
     </div>

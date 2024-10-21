@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Branches</h4>
           <ul className="branch-list">
-            <p><strong>Head Office :</strong> HYDERABAD<br /> Plot No. 94/P, Near Vijaya Model High School, <br></br>Subash Nagar, Quthbullapur, Hyderabad - 500055.</p>
-            <h3 className='heading3'>Branch Offices :</h3>
+            <p><strong>HEAD OFFICE :</strong> HYDERABAD<br /> Plot No. 94/P, Near Vijaya Model High School, <br></br>Subash Nagar, Quthbullapur, Hyderabad - 500055.</p>
+            <p><strong>BRANCH OFFICES :</strong></p>
             <p>VISAKHAPATNAM<br /></p>
             <p>BANGALORE<br /></p>
             <p>CHENNAI<br /></p>
