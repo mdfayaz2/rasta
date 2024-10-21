@@ -60,11 +60,26 @@
   transition: transform 0.4s ease-in-out, color 0.3s ease-in-out;
   margin-bottom: 10px;
 }
-
+/* 
 .logo-card:hover svg {
   transform: rotate(360deg) scale(1.2);
   color: black;
+} */
+
+/* Add this to your CSS file */
+.billing-gif {
+  position: absolute; /* Position it absolutely */
+  top: 50%; /* Adjust vertical position */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center it */
+  z-index: 10; /* Ensure it appears above other elements */
 }
+
+.billing-gif img {
+  width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
 
 /* Typography styling in cards */
 .logo-card h3 {

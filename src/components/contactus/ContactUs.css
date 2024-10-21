@@ -1,88 +1,114 @@
-/* General modal styles */
+/* ContactUs.css */
+
+/* Modal Background */
 .custom-modal {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark translucent background */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 1000; /* Make sure it's on top of everything */
 }
 
 .modal-content {
-  background-color: white;
-  padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
+  padding: 2rem;
   width: 90%;
-  max-width: 900px;
-  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   position: relative;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .modal-content {
-    width: 95%;
-    max-width: 600px;
-  }
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 480px) {
-  .modal-content {
-    width: 100%;
-    max-width: 300px;
-  }
+.company-logo {
+  width: 500px;
+  height: auto;
 }
-
+.location {
+  font-size: 700px;
+}
+/* Close button */
 .close-icon {
   position: absolute;
   top: 10px;
   right: 20px;
-  font-size: 24px;
+  font-size: 2rem;
+  font-weight: bold;
   cursor: pointer;
+  color: #333;
 }
 
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Contact Info */
 .contact-info {
-  margin-top: 20px;
+  display: grid;
+  gap: 1.2rem;
 }
 
 .mail {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.6rem;
 }
 
 .contact-icon {
-  font-size: 1.5rem;
-  margin-right: 10px;
-  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
-.mail strong {
-  display: flex;
-  align-items: center;
-  min-width: 190px;
-  text-align: left;
+.contact-label {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.1rem;
 }
 
 .mail p {
-  flex-grow: 1;
   margin: 0;
-  text-align: left;
+  font-size: 1rem;
+  color: #555;
 }
 
-.logo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-label {
+    font-size: 1rem;
+  }
+
+  .contact-icon {
+    font-size: 1.6rem;
+  }
+
+  .mail p {
+    font-size: 0.95rem;
+  }
 }
 
-.company-logo {
-  max-width: 300px;
-  height: auto;
-}
+/* Fade in animation */

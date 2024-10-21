@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './FloatingForm.css';
@@ -34,6 +35,16 @@ const FloatingForm = () => {
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
             >
+              {/* X icon to close the modal */}
+              <motion.span
+                className="close-icon"
+                onClick={toggleForm}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                &times;
+              </motion.span>
+
               <h2>Inquiry Form</h2>
               <form>
                 <div className="form-group">
@@ -57,14 +68,6 @@ const FloatingForm = () => {
                   Submit
                 </motion.button>
               </form>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="close-button"
-                onClick={toggleForm}
-              >
-                Close
-              </motion.button>
             </motion.div>
           </motion.div>
         )}
@@ -73,4 +76,4 @@ const FloatingForm = () => {
   );
 };
 
-export default FloatingForm;
+export default FloatingForm;
