@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/rasta/static/css/main.6ab26eb9.css",
-    "main.js": "/rasta/static/js/main.656e4200.js",
+    "main.css": "/rasta/static/css/main.ba86a5bb.css",
+    "main.js": "/rasta/static/js/main.38fa2fc9.js",
     "static/media/slide3.png": "/rasta/static/media/slide3.735e759762af73ea505b.png",
     "static/media/slide1.png": "/rasta/static/media/slide1.0c0a69d718deafe6e23c.png",
     "static/media/slide2.png": "/rasta/static/media/slide2.19247852111b700c5ed1.png",
+    "static/media/calccost.gif": "/rasta/static/media/calccost.7f665a10b107af1a797f.gif",
+    "static/media/register.gif": "/rasta/static/media/register.e47c7739a61724db5ee8.gif",
+    "static/media/job.gif": "/rasta/static/media/job.67b73d05f21788b919a8.gif",
     "static/media/logo1.png": "/rasta/static/media/logo1.807e702d8f4ec6bb06b5.png",
+    "static/media/menu.gif": "/rasta/static/media/menu.7f2f81640047bba43735.gif",
+    "static/media/target.png": "/rasta/static/media/target.fa20940613b7911fe757.png",
+    "static/media/calculate-cost.png": "/rasta/static/media/calculate-cost.ad7acee8ff1c7df34b93.png",
+    "static/media/notes.png": "/rasta/static/media/notes.3e11b0a9b37a554800c1.png",
     "static/media/poppins-latin-400-normal.woff": "/rasta/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
     "static/media/poppins-latin-400-normal.woff2": "/rasta/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
     "static/media/poppins-latin-ext-400-normal.woff": "/rasta/static/media/poppins-latin-ext-400-normal.cf7e1ed83eb19f7b1ea6.woff",
     "static/media/poppins-latin-ext-400-normal.woff2": "/rasta/static/media/poppins-latin-ext-400-normal.6f94f40f848d79872444.woff2",
     "index.html": "/rasta/index.html",
-    "main.6ab26eb9.css.map": "/rasta/static/css/main.6ab26eb9.css.map",
-    "main.656e4200.js.map": "/rasta/static/js/main.656e4200.js.map"
+    "main.ba86a5bb.css.map": "/rasta/static/css/main.ba86a5bb.css.map",
+    "main.38fa2fc9.js.map": "/rasta/static/js/main.38fa2fc9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ab26eb9.css",
-    "static/js/main.656e4200.js"
+    "static/css/main.ba86a5bb.css",
+    "static/js/main.38fa2fc9.js"
   ]
 }
